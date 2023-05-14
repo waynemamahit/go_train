@@ -11,15 +11,15 @@ func main() {
 	result := [][]int{};
 	var pd int = 0;
 	var sd int = d - 1;
-	var calc_pd int = 0;
-	var calc_sd int = 0;
+	var calcPd int
+	var calcSd int
 	for pd < d {
-		calc_pd += result[pd][pd];
-		calc_sd += result[pd][sd];
+		calcPd += result[pd][pd];
+		calcSd += result[pd][sd];
 		pd += 1;
 		sd -= 1;
 	}
-	hasil := calc_pd - calc_sd;
+	hasil := calcPd - calcSd;
 	fmt.Println(hasil);
 }
 
